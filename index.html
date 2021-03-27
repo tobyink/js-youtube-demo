@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+		<title>Videos</title>
+		<style type="text/css">
+			.video {
+				position: relative;
+				width: 100%;
+				height: 0;
+				padding-bottom: 56.25%;
+			}
+			.video iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+	
+		<div class="my-4 container">
+			<h1 class="display-1 text-center mb-4">Videos</h1>
+			<div id="videos"></div>
+		</div>
+		
+		<script>
+			jQuery( document ).ready( function ( $ ) {
+				$( '#videos' ).showVideos( {
+					"sections": [
+						{
+							"id": "instrument-training",
+							"title": "Instrument Training",
+							"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porttitor orci mattis porttitor vulputate. Curabitur ac ultrices libero, vel tincidunt nisl.",
+							"videos": [
+								{
+									"url": "https://www.youtube.com/watch?v=EHI3e75zHis",
+									"title": "Piano",
+									"description": "Vivamus rhoncus et tortor non facilisis. Quisque placerat suscipit odio id lobortis. Duis felis tortor, sodales egestas nibh sed, lobortis pretium augue. Donec consequat euismod blandit."
+								},
+								{
+									"url": "https://www.youtube.com/watch?v=88G0O5unNuQ",
+									"title": "Violin",
+									"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper porttitor massa, eget semper ipsum dictum quis. Aenean a consequat elit, nec eleifend ex. Nulla imperdiet, erat luctus condimentum tempor, augue nibh volutpat justo, sit amet maximus felis ipsum nec sapien."
+								},
+								{
+									"url": "https://www.youtube.com/watch?v=EHI3e75zHis",
+									"title": "Piano",
+									"description": "Vivamus rhoncus et tortor non facilisis. Quisque placerat suscipit odio id lobortis. Duis felis tortor, sodales egestas nibh sed, lobortis pretium augue. Donec consequat euismod blandit."
+								},
+								{
+									"url": "https://www.youtube.com/watch?v=88G0O5unNuQ",
+									"title": "Violin",
+									"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper porttitor massa, eget semper ipsum dictum quis. Aenean a consequat elit, nec eleifend ex. Nulla imperdiet, erat luctus condimentum tempor, augue nibh volutpat justo, sit amet maximus felis ipsum nec sapien."
+								},
+								{
+									"url": "https://www.youtube.com/watch?v=EHI3e75zHis",
+									"title": "Piano",
+									"description": "Vivamus rhoncus et tortor non facilisis. Quisque placerat suscipit odio id lobortis. Duis felis tortor, sodales egestas nibh sed, lobortis pretium augue. Donec consequat euismod blandit."
+								}
+							]
+						},
+						{
+							"id": "another-section",
+							"title": "Another Section",
+							"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porttitor orci mattis porttitor vulputate. Curabitur ac ultrices libero, vel tincidunt nisl.",
+							"videos": [
+								{
+									"url": "https://www.youtube.com/watch?v=EHI3e75zHis",
+									"title": "Piano",
+									"description": "Vivamus rhoncus et tortor non facilisis. Quisque placerat suscipit odio id lobortis. Duis felis tortor, sodales egestas nibh sed, lobortis pretium augue. Donec consequat euismod blandit."
+								},
+								{
+									"url": "https://www.youtube.com/watch?v=88G0O5unNuQ",
+									"title": "Violin",
+									"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper porttitor massa, eget semper ipsum dictum quis. Aenean a consequat elit, nec eleifend ex. Nulla imperdiet, erat luctus condimentum tempor, augue nibh volutpat justo, sit amet maximus felis ipsum nec sapien."
+								},
+								{
+									"url": "https://www.youtube.com/watch?v=EHI3e75zHis",
+									"title": "Piano",
+									"description": "Vivamus rhoncus et tortor non facilisis. Quisque placerat suscipit odio id lobortis. Duis felis tortor, sodales egestas nibh sed, lobortis pretium augue. Donec consequat euismod blandit."
+								},
+								{
+									"url": "https://www.youtube.com/watch?v=88G0O5unNuQ",
+									"title": "Violin",
+									"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper porttitor massa, eget semper ipsum dictum quis. Aenean a consequat elit, nec eleifend ex. Nulla imperdiet, erat luctus condimentum tempor, augue nibh volutpat justo, sit amet maximus felis ipsum nec sapien."
+								},
+								{
+									"url": "https://www.youtube.com/watch?v=EHI3e75zHis",
+									"title": "Piano",
+									"description": "Vivamus rhoncus et tortor non facilisis. Quisque placerat suscipit odio id lobortis. Duis felis tortor, sodales egestas nibh sed, lobortis pretium augue. Donec consequat euismod blandit."
+								}
+							]
+						},
+						{
+							"id": "and-another",
+							"title": "And Another",
+							"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porttitor orci mattis porttitor vulputate. Curabitur ac ultrices libero, vel tincidunt nisl.",
+							"videos": [
+								{
+									"url": "https://www.youtube.com/watch?v=EHI3e75zHis",
+									"title": "Piano",
+									"description": "Vivamus rhoncus et tortor non facilisis. Quisque placerat suscipit odio id lobortis. Duis felis tortor, sodales egestas nibh sed, lobortis pretium augue. Donec consequat euismod blandit."
+								},
+								{
+									"url": "https://www.youtube.com/watch?v=88G0O5unNuQ",
+									"title": "Violin",
+									"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper porttitor massa, eget semper ipsum dictum quis. Aenean a consequat elit, nec eleifend ex. Nulla imperdiet, erat luctus condimentum tempor, augue nibh volutpat justo, sit amet maximus felis ipsum nec sapien."
+								},
+								{
+									"url": "https://www.youtube.com/watch?v=EHI3e75zHis",
+									"title": "Piano",
+									"description": "Vivamus rhoncus et tortor non facilisis. Quisque placerat suscipit odio id lobortis. Duis felis tortor, sodales egestas nibh sed, lobortis pretium augue. Donec consequat euismod blandit."
+								},
+								{
+									"url": "https://www.youtube.com/watch?v=88G0O5unNuQ",
+									"title": "Violin",
+									"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper porttitor massa, eget semper ipsum dictum quis. Aenean a consequat elit, nec eleifend ex. Nulla imperdiet, erat luctus condimentum tempor, augue nibh volutpat justo, sit amet maximus felis ipsum nec sapien."
+								},
+								{
+									"url": "https://www.youtube.com/watch?v=EHI3e75zHis",
+									"title": "Piano",
+									"description": "Vivamus rhoncus et tortor non facilisis. Quisque placerat suscipit odio id lobortis. Duis felis tortor, sodales egestas nibh sed, lobortis pretium augue. Donec consequat euismod blandit."
+								},
+								{
+									"url": "https://www.youtube.com/watch?v=88G0O5unNuQ",
+									"title": "Violin",
+									"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ullamcorper porttitor massa, eget semper ipsum dictum quis. Aenean a consequat elit, nec eleifend ex. Nulla imperdiet, erat luctus condimentum tempor, augue nibh volutpat justo, sit amet maximus felis ipsum nec sapien."
+								},
+								{
+									"url": "https://www.youtube.com/watch?v=EHI3e75zHis",
+									"title": "Piano",
+									"description": "Vivamus rhoncus et tortor non facilisis. Quisque placerat suscipit odio id lobortis. Duis felis tortor, sodales egestas nibh sed, lobortis pretium augue. Donec consequat euismod blandit."
+								}
+							]
+						},
+					]
+				});
+			} );
+		</script>
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+		<script src="videos.js" defer></script>
+		
+	</body>
+</html>
